@@ -1,0 +1,24 @@
+---
+title: "Rapport R a quebec ex 2"
+author: "Me"
+date: "13 mai 2019"
+output:
+  pdf_document: default
+params:
+  data: NA
+---
+
+```{r setup, include=FALSE}
+options(knitr.kable.NA = '')
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE,knitr.kable.NA = '')
+```
+
+## Print out of raw data
+
+
+```{r}
+library(knitr)
+kable(params$data)
+
+```
+
